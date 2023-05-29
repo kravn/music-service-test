@@ -3,14 +3,18 @@
 ## Project setup
 
 ```
-# yarn
+# Clone this repository
+# After cloning, run these commands below:
+
+# Install app and needed packages using yarn
 yarn
 
-# npm
-npm install
+# Run the app
+yarn dev
 
-# pnpm
-pnpm install
+# Run the json-server mock API
+yarn serve
+
 ```
 
 ### Compiles and hot-reloads for development
