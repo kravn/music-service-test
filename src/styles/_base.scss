@@ -1,0 +1,77 @@
+.ms-app-bar {
+    border-bottom: $pink-2 solid 1px;
+}
+
+.ms-artist {
+    background-color: $black-1;
+
+    .ms-artist-albums {
+        position: relative;
+    }
+}
+
+.ms-album  {
+    background-color: $black-2;
+}
+
+.ms-songs-table {
+    width: 100%;
+}
+
+.ms-pagination {
+    width: 100%;
+}
+
+.ms-datatable {
+    border-radius: 10px;
+    border: 1px solid lighten($black-2, 4%);
+
+    .sm-table-header {
+        position: relative;
+        
+        &-btn {
+            position: absolute;
+            margin-left: 10px;
+            display: none;
+        }
+
+        &:hover {
+            .sm-table-header-btn {
+                display: inline-block;
+            }
+        }
+    }
+
+    thead {
+        tr, th {
+            background: $black-1 !important;
+        }
+        th {
+            padding: 20px 16px;
+        }
+    }
+
+    tbody {
+        tr:nth-child(even) {
+            background: $black-2;
+            transition: background 0.5s ease-in 0s;
+        }
+          
+        tr:nth-child(odd) {
+            background: darken($black-2, 1%);
+            transition: background 0.5s ease-in 0s;
+        }
+
+        tr:nth-child(odd),
+        tr:nth-child(even) {
+            &:hover {
+                background: lighten($black-2, 2%);
+                transition: background 0.1s ease-in 0s;
+
+                td {
+                    color: $pink !important;
+                }
+            }
+        }
+    }
+}
